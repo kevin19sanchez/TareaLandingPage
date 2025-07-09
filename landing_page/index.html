@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Promociones - Siman</title>
+</head>
+<body>
+    <!-- Logo y Menu -->
+    <header>
+        <nav class="navbar">
+            <!-- Lado izquierdo Logo-->
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.webp" alt="siman">
+                </a>
+            </div>
+
+            <!-- Centro del menu (navbar) -->
+            <ul class="navbar-menu">
+                <li><a href="index.html">Incio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+
+            <!-- Lado derecho Filtro y Carrio -->
+            <div class="navbar-right">
+            <div class="search-container">
+                <input type="text" placeholder="Bucar...">
+                <i class="bi bi-search"></i>
+            </div>
+                <button class="icon-button" title="Carrito">
+                    <i class="bi bi-cart-fill"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Logo y Menu -->
+
+    <!-- Secciones principales -->
+    <main>
+        <!-- Slider de imagenes -->
+        <section class="product-carousel">
+            <h2>Ofertas de Agosto</h2>
+            <div class="carousel-track">
+
+                <a href="detalle.html?id=1" class="product-link">
+                    <div class="product-card">
+                        <img src="images/img_slide/slide1.webp" alt="imagen1">
+                        <div class="info">
+                            <p class="brand">Samsung</p>
+                            <p class="name">Microondas</p>
+                            <p class="price">$89.00</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="detalle.html?id=2" class="product-link">
+                    <div class="product-card">
+                        <img src="images/img_slide/slide2.webp" alt="imagen2">
+                        <div class="info">
+                            <p class="brand">LG</p>
+                            <p class="name">Lavadora Automática</p>
+                            <p class="price">$449.00</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="product-card">
+                    <img src="images/img_slide/slide3.webp" alt="imagen3">
+                    <div class="info">
+                        <p class="brand">Mabe</p>
+                        <p class="name">Cocina Eléctrica</p>
+                        <p class="price">$799.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/img_slide/slide4.webp" alt="imagen3">
+                    <div class="info">
+                        <p class="brand">Frigidaire</p>
+                        <p class="name">Refrigeradora French</p>
+                        <p class="price">$1,049.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/img_slide/slide5.webp" alt="imagen3">
+                    <div class="info">
+                        <p class="brand">Sony</p>
+                        <p class="name">Audifonos Bluetooth</p>
+                        <p class="price">$45.90</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/img_slide/slide6.webp" alt="imagen3">
+                    <div class="info">
+                        <p class="brand">JBL</p>
+                        <p class="name">Bocina inalámbrica JBL</p>
+                        <p class="price">$214.90</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="content-flex">
+            <div class="content-left">
+                <!-- Seccion de Promociones Destacadas -->
+                <section class="promociones-destacadas">
+                    <h2>Promociones Destacadas</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/img_promotions/promotion1.webp" alt="categoria1">
+                            <p>Muebles</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/img_promotions/promotion2.webp" alt="categoria1">
+                            <p>Hogar</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/img_promotions/promotion3.webp" alt="categoria1">
+                            <p>Tecnología</p>
+                        </div>
+
+                        
+                        <!-- mas categorias -->
+                    </div>
+                </section>
+
+                <!-- Seccion de Promociones por Catgorias -->
+                <section>
+                    <h2>Categorias en Promocion</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/img_category/category2.webp" alt="categoria Maquillaje">
+                            <p>Zapatos para Hombres</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/img_category/category3.webp" alt="categoria ropa">
+                            <p>Ropa Deportiva</p>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="images/img_category/category1.webp" alt="categoria perfumes">
+                            <p>Perfumes</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGTH SIDE -->
+            <!-- ASIDE -->
+            <aside class="suscripcion">
+                <h2>Suscríbete a nuestras promociones</h2>
+                <form action="#">
+                    <!-- <input type="text" placeholder="Nombre completo" required> -->
+                    <input type="email" placeholder="Correo electronico" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </aside>
+        </div>
+    </main>
+    <!-- Fin Secciones principales -->
+    
+    <!-- Pie de Pagina -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- CONTACTO -->
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p><i class="bi bi-telephone-fill"></i> Tel: +503 2267-6767</p>
+                <p><i class="bi bi-envelope-fill"></i> info@siman.com.sv</p>
+            </div>
+
+            <!-- ALMACENES -->
+            <div class="footer-almacenes">
+                <h3>Almacenes Siman</h3>
+                <ul>
+                    <li>Metrocentro San Salvador</li>
+                    <li>Galerías</li>
+                    <li>Santa Ana Metrocentro</li>
+                    <li>San Miguel</li>
+                </ul>
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="footer-sociales">
+                <h3>Siguenos</h3>
+                <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" title="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2025 Siman El Salvador, Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- Pie de Pagina -->
+    
+    <script src="js/slider.js"></script>
+</body>
+</html>
